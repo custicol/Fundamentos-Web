@@ -4,16 +4,17 @@
 /*Definição das Variáveis do CSS*/
 :root {
     /*Cores de Fundo (Background)*/
-    --background-page: #FFF9E7;
-    --background-nav: #3A53E3;
-    --background-sobre: #F8CD53;
-    --background-footer: #29282B;
+    --background-page: #090909;
+    --background-nav: #1a111d;
+    --background-sobre: #1a111d;
+    --background-footer: #1a111d;
+    --background-video: #1a111d;
 
     /* Cores das Fontes (texto) */
-    --cor-fonte-padrao: #000000;
-    --cor-fonte-nav: #FFFFFF;
-    --cor-fonte-by: orange;
-    --cor-fonte-button-hover: yellow;
+    --cor-fonte-padrao: #ffffff;
+    --cor-fonte-nav: #ffffff;
+    --cor-fonte-by: rgb(0, 0, 0);
+    --cor-fonte-button-hover: rgb(10, 10, 10);
 
     /* Fontes da Página */
     --lato-roboto: 'lato', Roboto;
@@ -115,10 +116,10 @@ a:hover {
 /* Define configurações específicas para o elemento Nav (menu)*/
 nav {
     margin: 0 auto;
-    width: 80vw;
+    
 
     /* Exibe os itens na tela no modo flex */
-    display: flex;
+    display: flex;flex-direction: row-reverse;
 
     /* Insere um espaçamento entre os itens */
     justify-content: space-between;
@@ -146,12 +147,14 @@ nav a,
     justify-content: left;
     gap: 0.5rem;
     align-items: center;
+    
 }
 
 /* Define configurações específicas da classe icone */
 .icone {
-    width: 7rem;
-    padding-left: 1rem;
+    width: 8rem;
+    border-radius: 1rem;
+    
 }
 
 /* Define configurações específicas da classe titulo */
@@ -178,6 +181,9 @@ main {
     display: flex;
     align-items: center;
     padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-top: 1.0rem;
+    
     background-color: var(--background-sobre);
     border-radius: 1rem;
     text-align: justify;    
@@ -289,6 +295,26 @@ label {
     font-weight: 500;
 }
 
+
+.video1{
+    display: flex;
+    justify-content: center;
+
+
+}
+
+ol {
+    display: flex;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
 /* Define configurações específicas dos elementos dos formulários */
 input,
 textarea,
@@ -304,7 +330,7 @@ button {
 /* Define configurações específicas dos elementos input e textarea */
 input,
 textarea {
-    border: 1px solid orange;
+    border: 1px solid #1a111d;
 }
 
 /* Define configurações da propriedade placeholder */
